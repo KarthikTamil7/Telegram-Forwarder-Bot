@@ -8,18 +8,21 @@ from forwarder import (API_KEY, CERT_PATH, IP_ADDRESS, LOGGER, OWNER_ID, PORT,
 from forwarder.modules import ALL_MODULES
 
 PM_START_TEXT = """
-Hey {}, I'm {}!
-I'm a bot used to forward messages from one chat to another.
+<b>Hi 👋🏻 {},
 
-To obtain a list of commands, use /help.
+I'm {} a Bot to Maintain Your Channels. I am very useful for the Channel Admin who have many Channels.
+
+See /help for more Details.
+
+Maintained By : [Karthik](https://t.me/HMTD_Karthik)</b>
 """
 
 PM_HELP_TEXT = """
-Here is a list of usable commands:
+<b>Here is a list of usable Commands :-
  - /start : Starts the bot.
  - /help : Sends you this help message.
 
-just send /id in private chat/group/channel and i will reply it's id.
+just send /id in private chat/group/channel and i will reply it's ID.</b>
 """
 
 for module in ALL_MODULES:
