@@ -25,6 +25,19 @@ PM_HELP_TEXT = """
 just send /id in private chat/group/channel and i will reply it's ID.</b>
 """
 
+PM_ABOUT_TEXT = """
+<b>🤖 My Name : [Star Auto Forward Bot](https://t.me/Star_Auto_Forward_Bot)
+
+🧑🏻‍💻 Developer : [Karthik](https://t.me/Star_Movies_Karthik)
+
+📝 Language : Pyrogram
+
+📚 Framework : Python3
+
+📡 Hosted on : VPS
+
+📢 Updates Channel : [Star Movies Tamil](https://t.me/Star_Moviess_Tamil)</b>"""
+
 for module in ALL_MODULES:
     importlib.import_module("forwarder.modules." + module)
 
