@@ -1,7 +1,7 @@
 from telegram import Bot, ParseMode, Update
 from telegram.ext import Filters, MessageHandler
 
-from forwarder import FROM_CHATS, OWNER_ID, TO_CHATS, FROM_CHATS_1, TO_CHATS_1, dispatcher
+from forwarder import FROM_CHATS, OWNER_ID, TO_CHATS, FROM_CHATS_1, TO_CHATS_1, FROM_CHATS_2, TO_CHATS_2, FROM_CHATS_3, TO_CHATS_3, FROM_CHATS_4, TO_CHATS_4, FROM_CHATS_5, TO_CHATS_5, dispatcher
 
 
 def get_id(update, context):
