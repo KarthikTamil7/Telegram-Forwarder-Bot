@@ -18,11 +18,12 @@ Maintained By : [Karthik](https://t.me/HMTD_Karthik)</b>
 """
 
 PM_HELP_TEXT = """
-Hi 👋🏻 {},
+<b>Hi 👋🏻 {},
 
-<b>Here is a list of usable Commands :-
- - /start : Starts the bot.
- - /help : Sends you this help message.
+Here is a list of usable Commands :-
+♦️ /start :- Start the Bot.
+♦️ /help :- Sends you this Help Message.
+♦️ /about :- About Me 😁
 
 just send /id in private chat/group/channel and i will reply it's ID.</b>
 """
@@ -75,7 +76,7 @@ def about(update: Update, _):
     message = update.effective_message
     if chat.type == "private":
         message.reply_text(
-            PM_ABOUT_TEXT.format(user.first_name, dispatcher.bot.first_name),
+            PM_ABOUT_TEXT.format(
             parse_mode=ParseMode.HTML,
         )
     else:
