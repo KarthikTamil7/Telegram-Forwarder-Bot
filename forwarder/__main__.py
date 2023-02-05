@@ -61,11 +61,11 @@ def help(update: Update, _):
     message = update.effective_message
 
     if not chat.type == "private":
-        message.reply_text("Contact me via PM to get a list of usable commands.")
-    else:
         message.reply_text(PM_HELP_TEXT)
             parse_mode=ParseMode.HTML,
         )
+    else:
+        message.reply_text("Contact me via PM to get a list of usable commands.")
 
 def help(update: Update, _):
     chat = update.effective_chat
