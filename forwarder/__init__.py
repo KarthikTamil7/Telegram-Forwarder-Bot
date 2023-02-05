@@ -94,5 +94,8 @@ updater = tg.Updater(API_KEY, workers=WORKERS)
 
 dispatcher = updater.dispatcher
 
+FROM_CHATS_1 = list(FROM_CHATS_1)
+TO_CHATS_1 = list(TO_CHATS_1)
+
 FROM_CHATS = list(FROM_CHATS)
 TO_CHATS = list(TO_CHATS)
