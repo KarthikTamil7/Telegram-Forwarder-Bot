@@ -61,9 +61,11 @@ def start(update: Update, _):
 def about(update: Update, _):
     chat = update.effective_chat
     message = update.effective_message
+    user = update.effective_user
+
     if chat.type == "private":
         message.reply_text(
-            ABOUT.format(
+            ABOUT.format(user.first_name, dispatcher.bot.first_name),
             parse_mode=ParseMode.HTML,
         )
     else:
