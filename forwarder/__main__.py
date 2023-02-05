@@ -66,6 +66,8 @@ def about(update: Update, _):
             ABOUT.format(
             parse_mode=ParseMode.HTML,
         )
+    else:
+        message.reply_text("About Me")
 
 def help(update: Update, _):
     chat = update.effective_chat
