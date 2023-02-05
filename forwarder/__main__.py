@@ -14,7 +14,7 @@ I'm {} to Maintain Your Channels. I am very useful for the Channel Admin who hav
 
 See /help for more Details.
 
-Maintained By : <a href=https://t.me/Star_Movies_Karthik><b>Karthik</b></a></b>
+Maintained By :- Karthik</b>
 """
 
 HELP = """
@@ -25,13 +25,13 @@ Here is a list of usable Commands :-
 ♦️ /help :- Sends you this Help Message.
 ♦️ /about :- About Me 😁
 
-just send /id in private chat/group/channel and i will reply it's ID.</b>
+just Send /id in Private Chat/Group/Channel and i will Reply it's ID.</b>
 """
 
 ABOUT = """
-<b><i>🤖 My Name : <a href=https://t.me/Star_Auto_Forward_Bot><b>Star Auto Forward Bot</b></a>
+<b>🤖 My Name : {}
 
-🧑🏻‍💻 Developer : <a href=https://t.me/Star_Movies_Karthik><b>Karthik</b></a>
+🧑🏻‍💻 Developer : Karthik
 
 📝 Language : Pyrogram
 
@@ -39,7 +39,7 @@ ABOUT = """
 
 📡 Hosted on : VPS
 
-📢 Updates Channel : <a href=https://t.me/Star_Moviess_Tamil><b></b>Star Movies Tamil</a>\n</b></i>
+📢 Updates Channel : @Star_Moviess_Tamil</b>
 """
 
 for module in ALL_MODULES:
