@@ -18,6 +18,8 @@ Maintained By : [Karthik](https://t.me/HMTD_Karthik)</b>
 """
 
 PM_HELP_TEXT = """
+Hi 👋🏻 {},
+
 <b>Here is a list of usable Commands :-
  - /start : Starts the bot.
  - /help : Sends you this help message.
@@ -61,7 +63,8 @@ def help(update: Update, _):
     message = update.effective_message
 
     if not chat.type == "private":
-        message.reply_text(PM_HELP_TEXT)
+        message.reply_text(
+            PM_HELP_TEXT.format(user.first_name, dispatcher.bot.first_name),
             parse_mode=ParseMode.HTML,
         )
     else:
