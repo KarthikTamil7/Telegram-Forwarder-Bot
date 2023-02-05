@@ -21,7 +21,9 @@ if ENV:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
 
     try:
-        FROM_CHATS = set(int(x) for x in os.environ.get("FROM_CHATS", "").split())
+        FROM_CHATS = set(int(x) for x in os.environ.get("FROM_CHATS", "0").split())
+    except ValueError:
+        raise Exception("Your TO_CHATS list does not contain valid integers.")
 
     try:
         TO_CHATS = set(int(x) for x in os.environ.get("TO_CHATS", "").split())
