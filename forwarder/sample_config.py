@@ -12,7 +12,7 @@ if not __name__.endswith("sample_config"):
 # Create a new config.py file in same dir and import, then extend this class.
 class Config(object):
     LOGGER = True
-    REMOVE_TAG = False
+    REMOVE_TAG = True
 
     # REQUIRED
     API_KEY = "617722711:AAHysCHsVcQja6LOlHa88101lKjrxez80-M"  # API key obtained from BotFather
@@ -21,6 +21,10 @@ class Config(object):
     # FOR AUTOMATICALLY FORWARDING MESSAGES
     FROM_CHATS = [-1001234704297]  # List of chat id's to forward messages from
     TO_CHATS = [-1001128355490]  # List of chat id's to forward messages to
+
+    # FOR AUTOMATICALLY FORWARDING MESSAGES
+    FROM_CHATS_1 = [-1001234704297]  # List of chat id's to forward messages from
+    TO_CHATS_1 = [-1001128355490]  # List of chat id's to forward messages to
 
     # FOR WEBHOOKS
     WEBHOOK = False
