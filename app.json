@@ -28,6 +28,14 @@
       "description": "List of chat id's to forward messages to",
       "required": false
     },
+    "FROM_CHATS_1": {
+      "description": "List of chat id's to forward messages from.",
+      "required": false
+    },
+    "TO_CHATS_1": {
+      "description": "List of chat id's to forward messages to",
+      "required": false
+    },
     "WEBHOOK": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode messages.",
       "required": false
