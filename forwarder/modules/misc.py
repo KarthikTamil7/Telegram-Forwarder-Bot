@@ -19,6 +19,7 @@ def get_id(update, context):
                     sender.first_name, sender.id, forwarder.first_name, forwarder.id
                 ),
                 parse_mode=ParseMode.MARKDOWN,
+                parse_mode=ParseMode.HTML,
             )
         elif (
             message.reply_to_message.forward_from_chat
