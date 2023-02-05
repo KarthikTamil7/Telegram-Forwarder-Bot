@@ -5,7 +5,7 @@ from telegram.ext import CallbackContext, Filters, MessageHandler
 from telegram.error import ChatMigrated
 from telegram.update import Update
 
-from forwarder import FROM_CHATS, LOGGER, REMOVE_TAG, TO_CHATS, FROM_CHATS_1, TO_CHATS_1, dispatcher
+from forwarder import FROM_CHATS, LOGGER, REMOVE_TAG, TO_CHATS, FROM_CHATS_1, TO_CHATS_1,  FROM_CHATS_2, TO_CHATS_2, FROM_CHATS_3, TO_CHATS_3, FROM_CHATS_4, TO_CHATS_4, FROM_CHATS_5, TO_CHATS_5, dispatcher
 
 
 def send_message(message: Message, chat_id: int) -> Union[MessageId, Message]:
