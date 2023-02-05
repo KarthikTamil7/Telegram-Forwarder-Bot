@@ -14,7 +14,7 @@
     },
     "API_KEY": {
       "description": "Your bot API KEY, get this value from @BotFather.",
-      "value": ""
+      "value": "5970301474:AAH9m7hpH0taQa0uQNLtSqpjRjJCYXNvPdQ"
     },
     "OWNER_ID": {
       "description": "An integer of consisting of your owner ID.",
@@ -31,6 +31,10 @@
     "WEBHOOK": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode messages.",
       "required": false
+    },
+    "REMOVE_TAG": {
+      "description": "if You set True!. You can forward without forward tag",
+      "value": "True"
     },
     "IP_ADDRESS": {
       "description": "leave it 0.0.0.0 if using Heroku.",
