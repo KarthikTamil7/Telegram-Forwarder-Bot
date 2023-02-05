@@ -26,11 +26,11 @@ def get_id(update, context):
             channel = message.reply_to_message.forward_from_chat
             forwarder = message.reply_to_message.from_user
             message.reply_text(
-                "<b>The Channel, {}, has an ID of `{}`. \n"
-                "The Forwarder, {}, has an ID of `{}`.</b>".format(
+                "<b>The Channel {}, has an ID of <code>{}</code>. \n"
+                "The Forwarder {}, has an ID of <code>{}</code>.</b>".format(
                     channel.title, channel.id, forwarder.first_name, forwarder.id
                 ),
-                parse_mode=ParseMode.MARKDOWN,
+                parse_mode=ParseMode.HTML,
             )
 
         else:
@@ -38,8 +38,8 @@ def get_id(update, context):
                 message.reply_to_message.from_user
             )  # Replied message is a message from a user
             message.reply_text(
-                "<b>{}'s ID is `{}`.</b>".format(user.first_name, user.id),
-                parse_mode=ParseMode.MARKDOWN,
+                "<b>{}'s ID is <code>{}</code>.</b>".format(user.first_name, user.id),
+                parse_mode=ParseMode.HTML,
             )
 
     else:
@@ -47,13 +47,13 @@ def get_id(update, context):
 
         if chat.type == "private":  # Private chat with the bot
             message.reply_text(
-                "<b>Your ID is `{}`.</b>".format(chat.id), parse_mode=ParseMode.MARKDOWN
+                "<b>Your ID is <code>{}</code>.</b>".format(chat.id), parse_mode=ParseMode.MARKDOWN
             )
 
         else:  # Group chat where the bot is a member
             message.reply_text(
                 "<b>This Group's ID is `{}`.</b>".format(chat.id),
-                parse_mode=ParseMode.MARKDOWN,
+                parse_mode=ParseMode.HTML,
             )
 
 
