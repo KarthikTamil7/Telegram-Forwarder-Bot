@@ -29,7 +29,7 @@ just Send /id in Private Chat/Group/Channel and i will Reply it's ID.</b>
 """
 
 ABOUT = """
-<b>🤖 My Name : {}
+<b>🤖 My Name : Star Auto Forward Bot
 
 🧑🏻‍💻 Developer : Karthik
 
@@ -75,6 +75,7 @@ def about(update: Update, _):
 def help(update: Update, _):
     chat = update.effective_chat
     message = update.effective_message
+    user = update.effective_user
 
     if chat.type == "private":
         message.reply_text(
