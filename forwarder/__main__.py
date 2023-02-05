@@ -76,7 +76,7 @@ def help(update: Update, _):
     chat = update.effective_chat
     message = update.effective_message
 
-    if not chat.type == "private":
+    if chat.type == "private":
         message.reply_text(
             HELP.format(user.first_name, dispatcher.bot.first_name),
             parse_mode=ParseMode.HTML,
