@@ -21,9 +21,10 @@ HELP = """
 <b>Hi 👋🏻 {},
 
 Here is a list of usable Commands :-
-♦️ /start :- Start the Bot.
-♦️ /help :- Sends you this Help Message.
-♦️ /about :- About Me 😁
+♦️ /start :- Check if 😊 I'm Alive
+♦️ /help :- This Bot's Features 
+♦️ /about :- to Know About Me 😁
+♦️ /id :- Get Your 🆔
 
 just Send /id in Private Chat/Group/Channel and i will Reply it's ID.</b>
 """
