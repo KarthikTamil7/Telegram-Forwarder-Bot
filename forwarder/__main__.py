@@ -58,6 +58,14 @@ def start(update: Update, _):
     else:
         message.reply_text("I'm up and running!")
 
+def about(update: Update, _):
+    chat = update.effective_chat
+    message = update.effective_message
+    if chat.type == "private":
+        message.reply_text(
+            ABOUT.format(
+            parse_mode=ParseMode.HTML,
+        )
 
 def help(update: Update, _):
     chat = update.effective_chat
@@ -70,15 +78,6 @@ def help(update: Update, _):
         )
     else:
         message.reply_text("Contact me via PM to get a list of usable commands.")
-
-def about(update: Update, _):
-    chat = update.effective_chat
-    message = update.effective_message
-    if chat.type == "private":
-        message.reply_text(
-            ABOUT.format(
-            parse_mode=ParseMode.HTML,
-        )
 
 def main():
     start_handler = CommandHandler(
