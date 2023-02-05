@@ -7,7 +7,7 @@ from forwarder import (API_KEY, CERT_PATH, IP_ADDRESS, LOGGER, OWNER_ID, PORT,
                        URL, WEBHOOK, dispatcher, updater)
 from forwarder.modules import ALL_MODULES
 
-PM_START_TEXT = """
+START = """
 <b>Hi 👋🏻 {},
 
 I'm {} to Maintain Your Channels. I am very useful for the Channel Admin who have many Channels.
@@ -17,7 +17,7 @@ See /help for more Details.
 Maintained By : [Karthik](https://t.me/HMTD_Karthik)</b>
 """
 
-PM_HELP_TEXT = """
+HELP = """
 <b>Hi 👋🏻 {},
 
 Here is a list of usable Commands :-
@@ -28,7 +28,7 @@ Here is a list of usable Commands :-
 just send /id in private chat/group/channel and i will reply it's ID.</b>
 """
 
-PM_ABOUT_TEXT = """
+ABOUT = """
 <b>🤖 My Name : [Star Auto Forward Bot](https://t.me/Star_Auto_Forward_Bot)
 
 🧑🏻‍💻 Developer : [Karthik](https://t.me/Star_Movies_Karthik)
@@ -52,7 +52,7 @@ def start(update: Update, _):
 
     if chat.type == "private":
         message.reply_text(
-            PM_START_TEXT.format(user.first_name, dispatcher.bot.first_name),
+            START.format(user.first_name, dispatcher.bot.first_name),
             parse_mode=ParseMode.HTML,
         )
     else:
@@ -65,7 +65,7 @@ def help(update: Update, _):
 
     if not chat.type == "private":
         message.reply_text(
-            PM_HELP_TEXT.format(user.first_name, dispatcher.bot.first_name),
+            HELP.format(user.first_name, dispatcher.bot.first_name),
             parse_mode=ParseMode.HTML,
         )
     else:
@@ -76,7 +76,7 @@ def about(update: Update, _):
     message = update.effective_message
     if chat.type == "private":
         message.reply_text(
-            PM_ABOUT_TEXT.format(
+            ABOUT.format(
             parse_mode=ParseMode.HTML,
         )
 
