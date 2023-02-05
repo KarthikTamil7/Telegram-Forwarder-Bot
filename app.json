@@ -36,6 +36,38 @@
       "description": "List of chat id's to forward messages to",
       "required": false
     },
+    "FROM_CHATS_2": {
+      "description": "List of chat id's to forward messages from.",
+      "required": false
+    },
+    "TO_CHATS_2": {
+      "description": "List of chat id's to forward messages to",
+      "required": false
+    },
+    "FROM_CHATS_3": {
+      "description": "List of chat id's to forward messages from.",
+      "required": false
+    },
+    "TO_CHATS_3": {
+      "description": "List of chat id's to forward messages to",
+      "required": false
+    },
+    "FROM_CHATS_4": {
+      "description": "List of chat id's to forward messages from.",
+      "required": false
+    },
+    "TO_CHATS_4": {
+      "description": "List of chat id's to forward messages to",
+      "required": false
+    },
+    "FROM_CHATS_5": {
+      "description": "List of chat id's to forward messages from.",
+      "required": false
+    },
+    "TO_CHATS_5": {
+      "description": "List of chat id's to forward messages to",
+      "required": false
+    },
     "WEBHOOK": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode messages.",
       "required": false
