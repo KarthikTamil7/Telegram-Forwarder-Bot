@@ -14,11 +14,11 @@
     },
     "API_KEY": {
       "description": "Your bot API KEY, get this value from @BotFather.",
-      "value": "5970301474:AAH9m7hpH0taQa0uQNLtSqpjRjJCYXNvPdQ"
+      "value": "6048853727:AAG2DBabWriwu3BdKguYH6YHWdgqMbS40r4"
     },
     "OWNER_ID": {
       "description": "An integer of consisting of your owner ID.",
-      "value": "873134115"
+      "value": "1391556668"
     },
     "FROM_CHATS": {
       "description": "List of chat id's to forward messages from.",
