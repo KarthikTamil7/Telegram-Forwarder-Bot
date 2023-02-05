@@ -17,4 +17,6 @@ services:
       - FROM_CHATS=$FROM_CHATS
       - TO_CHATS=$TO_CHATS
       - WORKERS=$WORKERS
+      - FROM_CHATS_1=$FROM_CHATS_1
+      - TO_CHATS_1=$TO_CHATS_1
     command: python3 -m forwarder
