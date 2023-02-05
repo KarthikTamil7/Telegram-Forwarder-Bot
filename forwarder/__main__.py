@@ -14,7 +14,7 @@ I'm {} to Maintain Your Channels. I am very useful for the Channel Admin who hav
 
 See /help for more Details.
 
-Maintained By : [Karthik](https://t.me/HMTD_Karthik)</b>
+Maintained By : <a href=https://t.me/Star_Movies_Karthik><b>Karthik</b></a></b>
 """
 
 HELP = """
@@ -29,9 +29,9 @@ just send /id in private chat/group/channel and i will reply it's ID.</b>
 """
 
 ABOUT = """
-<b>🤖 My Name : [Star Auto Forward Bot](https://t.me/Star_Auto_Forward_Bot)
+<b><i>🤖 My Name : <a href=https://t.me/Star_Auto_Forward_Bot><b>Star Auto Forward Bot</b></a>
 
-🧑🏻‍💻 Developer : [Karthik](https://t.me/Star_Movies_Karthik)
+🧑🏻‍💻 Developer : <a href=https://t.me/Star_Movies_Karthik><b>Karthik</b></a>
 
 📝 Language : Pyrogram
 
@@ -39,7 +39,8 @@ ABOUT = """
 
 📡 Hosted on : VPS
 
-📢 Updates Channel : [Star Movies Tamil](https://t.me/Star_Moviess_Tamil)</b>"""
+📢 Updates Channel : <a href=https://t.me/Star_Moviess_Tamil><b></b>Star Movies Tamil</a>\n</b></i>
+"""
 
 for module in ALL_MODULES:
     importlib.import_module("forwarder.modules." + module)
