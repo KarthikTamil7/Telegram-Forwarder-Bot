@@ -30,17 +30,6 @@ if ENV:
     except ValueError:
         raise Exception("Your TO_CHATS list does not contain valid integers.")
 
-    try:
-        FROM_CHATS_1 = set(int(x) for x in os.environ.get("FROM_CHATS_1", "").split())
-    except ValueError:
-        raise Exception("Your FROM_CHATS_1 list does not contain valid integers.")
-
-    try:
-        TO_CHATS_1 = set(int(x) for x in os.environ.get("TO_CHATS_1", "").split())
-    except ValueError:
-        raise Exception("Your TO_CHATS_1 list does not contain valid integers.")
-
-
     REMOVE_TAG = bool(os.environ.get("REMOVE_TAG", False))
     WEBHOOK = bool(os.environ.get("WEBHOOK", False))
     IP_ADDRESS = os.environ.get("IP_ADDRESS", "0.0.0.0")
