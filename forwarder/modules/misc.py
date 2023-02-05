@@ -18,7 +18,6 @@ def get_id(update, context):
                 "**The Forwarder, {}, has an ID of** `{}`.".format(
                     sender.first_name, sender.id, forwarder.first_name, forwarder.id
                 ),
-                parse_mode=ParseMode.MARKDOWN,
                 parse_mode=ParseMode.HTML,
             )
         elif (
