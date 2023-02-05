@@ -14,8 +14,8 @@ def get_id(update, context):
             sender = message.reply_to_message.forward_from
             forwarder = message.reply_to_message.from_user
             message.reply_text(
-                "<b>The Original sender, {}, has an ID of `{}`. \n"
-                "The Forwarder, {}, has an ID of `{}`.</b>".format(
+                "<b>The Original Sender, {}, has an ID of</b> `{}`. \n"
+                "<b>The Forwarder, {}, has an ID of</b> `{}`.".format(
                     sender.first_name, sender.id, forwarder.first_name, forwarder.id
                 ),
                 parse_mode=ParseMode.MARKDOWN,
