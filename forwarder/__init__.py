@@ -21,12 +21,12 @@ if ENV:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
 
     try:
-        FROM_CHATS = set(int(x) for x in os.environ.get("FROM_CHATS", "0").split())
+        FROM_CHATS = set(int(x) for x in os.environ.get("FROM_CHATS", "").split())
     except ValueError:
-        raise Exception("Your TO_CHATS list does not contain valid integers.")
+        raise Exception("Your FROM_CHATS list does not contain valid integers.")
 
     try:
-        TO_CHATS = set(int(x) for x in os.environ.get("TO_CHATS", "0").split())
+        TO_CHATS = set(int(x) for x in os.environ.get("TO_CHATS", "").split())
     except ValueError:
         raise Exception("Your TO_CHATS list does not contain valid integers.")
 
@@ -39,6 +39,7 @@ if ENV:
         TO_CHATS_1 = set(int(x) for x in os.environ.get("TO_CHATS_1", "0").split())
     except ValueError:
         raise Exception("Your TO_CHATS_1 list does not contain valid integers.")
+
 
     REMOVE_TAG = bool(os.environ.get("REMOVE_TAG", False))
     WEBHOOK = bool(os.environ.get("WEBHOOK", False))
@@ -95,6 +96,5 @@ dispatcher = updater.dispatcher
 
 FROM_CHATS_1 = list(FROM_CHATS_1)
 TO_CHATS_1 = list(TO_CHATS_1)
-
 FROM_CHATS = list(FROM_CHATS)
 TO_CHATS = list(TO_CHATS)
