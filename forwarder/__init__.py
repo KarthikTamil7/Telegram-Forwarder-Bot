@@ -40,6 +40,46 @@ if ENV:
     except ValueError:
         raise Exception("Your TO_CHATS_1 list does not contain valid integers.")
 
+    try:
+        FROM_CHATS_2 = set(int(x) for x in os.environ.get("FROM_CHATS_2", "0").split())
+    except ValueError:
+        raise Exception("Your FROM_CHATS_2 list does not contain valid integers.")
+
+    try:
+        TO_CHATS_2 = set(int(x) for x in os.environ.get("TO_CHATS_2", "0").split())
+    except ValueError:
+        raise Exception("Your TO_CHATS_2 list does not contain valid integers.")
+
+    try:
+        FROM_CHATS_3 = set(int(x) for x in os.environ.get("FROM_CHATS_3", "0").split())
+    except ValueError:
+        raise Exception("Your FROM_CHATS_3 list does not contain valid integers.")
+
+    try:
+        TO_CHATS_3 = set(int(x) for x in os.environ.get("TO_CHATS_3", "0").split())
+    except ValueError:
+        raise Exception("Your TO_CHATS_3 list does not contain valid integers.")
+
+    try:
+        FROM_CHATS_4 = set(int(x) for x in os.environ.get("FROM_CHATS_4", "0").split())
+    except ValueError:
+        raise Exception("Your FROM_CHATS_4 list does not contain valid integers.")
+
+    try:
+        TO_CHATS_4 = set(int(x) for x in os.environ.get("TO_CHATS_4", "0").split())
+    except ValueError:
+        raise Exception("Your TO_CHATS_4 list does not contain valid integers.")
+
+    try:
+        FROM_CHATS_5 = set(int(x) for x in os.environ.get("FROM_CHATS_5", "0").split())
+    except ValueError:
+        raise Exception("Your FROM_CHATS_5 list does not contain valid integers.")
+
+    try:
+        TO_CHATS_5 = set(int(x) for x in os.environ.get("TO_CHATS_5", "0").split())
+    except ValueError:
+        raise Exception("Your TO_CHATS_5 list does not contain valid integers.")
+
 
     REMOVE_TAG = bool(os.environ.get("REMOVE_TAG", False))
     WEBHOOK = bool(os.environ.get("WEBHOOK", False))
@@ -78,6 +118,46 @@ else:
         TO_CHATS_1 = set(int(x) for x in Config.TO_CHATS_1 or [])
     except ValueError:
         raise Exception("Your TO_CHATS_1 list does not contain valid integers.")
+
+    try:
+        FROM_CHATS_2 = set(int(x) for x in Config.FROM_CHATS_2)
+    except ValueError:
+        raise Exception("Your FROM_CHATS_2 list does not contain valid integers.")
+
+    try:
+        TO_CHATS_2 = set(int(x) for x in Config.TO_CHATS_2 or [])
+    except ValueError:
+        raise Exception("Your TO_CHATS_2 list does not contain valid integers.")
+
+    try:
+        FROM_CHATS_3 = set(int(x) for x in Config.FROM_CHATS_3)
+    except ValueError:
+        raise Exception("Your FROM_CHATS_3 list does not contain valid integers.")
+
+    try:
+        TO_CHATS_3 = set(int(x) for x in Config.TO_CHATS_3 or [])
+    except ValueError:
+        raise Exception("Your TO_CHATS_3 list does not contain valid integers.")
+
+    try:
+        FROM_CHATS_4 = set(int(x) for x in Config.FROM_CHATS_4)
+    except ValueError:
+        raise Exception("Your FROM_CHATS_4 list does not contain valid integers.")
+
+    try:
+        TO_CHATS_4 = set(int(x) for x in Config.TO_CHATS_4 or [])
+    except ValueError:
+        raise Exception("Your TO_CHATS_4 list does not contain valid integers.")
+
+    try:
+        FROM_CHATS_5 = set(int(x) for x in Config.FROM_CHATS_5)
+    except ValueError:
+        raise Exception("Your FROM_CHATS_5 list does not contain valid integers.")
+
+    try:
+        TO_CHATS_5 = set(int(x) for x in Config.TO_CHATS_5 or [])
+    except ValueError:
+        raise Exception("Your TO_CHATS_5 list does not contain valid integers.")
 
 
     REMOVE_TAG = Config.REMOVE_TAG
