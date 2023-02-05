@@ -70,7 +70,7 @@ def help(update: Update, _):
     else:
         message.reply_text("Contact me via PM to get a list of usable commands.")
 
-def help(update: Update, _):
+def about(update: Update, _):
     chat = update.effective_chat
     message = update.effective_message
     if chat.type == "private":
