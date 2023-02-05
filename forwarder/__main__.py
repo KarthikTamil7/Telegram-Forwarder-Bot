@@ -79,9 +79,6 @@ def about(update: Update, _):
             PM_ABOUT_TEXT.format(
             parse_mode=ParseMode.HTML,
         )
-    else:
-        message.reply_text("About Me 😌")
-
 
 def main():
     start_handler = CommandHandler(
