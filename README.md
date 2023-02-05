@@ -44,6 +44,18 @@ class Development(Config):
     # Make sure to include the '-' sign in group and channel ids.
     FROM_CHATS = [-1001234567890]  # List of chat id's to forward messages from.
     TO_CHATS = [-1001234567890, -1234567890]  # List of chat id's to forward messages to.
+    # This Config 👇 is Optionals
+    # Make sure to include the '-' sign in group and channel ids.
+    FROM_CHATS_1 = [-1001234567890] (Optional) # List of chat id's to forward messages from.
+    TO_CHATS_1 = [-1001234567890, -1234567890] (Optional)  # List of chat id's to forward messages to.
+    FROM_CHATS_2 = [-1001234567890] (Optional) # List of chat id's to forward messages from.
+    TO_CHATS_2 = [-1001234567890, -1234567890] (Optional)  # List of chat id's to forward messages to.
+    FROM_CHATS_3 = [-1001234567890] (Optional) # List of chat id's to forward messages from.
+    TO_CHATS_3 = [-1001234567890, -1234567890] (Optional)  # List of chat id's to forward messages to.
+    FROM_CHATS_4 = [-1001234567890] (Optional) # List of chat id's to forward messages from.
+    TO_CHATS_4 = [-1001234567890, -1234567890] (Optional)  # List of chat id's to forward messages to.
+    FROM_CHATS_5 = [-1001234567890] (Optional) # List of chat id's to forward messages from.
+    TO_CHATS_5 = [-1001234567890, -1234567890] (Optional)  # List of chat id's to forward messages to.
 
     REMOVE_TAG = True
     WORKERS = 4
@@ -62,6 +74,33 @@ minus (-) sign in the chat ID's of groups and channels. You can add ID's of user
 messages with the bot.
  - `TO_CHATS`: **Space separated** list of chat ID's to forward messages to. Do not forget to include the 
 minus (-) sign in the chat ID's of groups and channels. You can add ID's of users too, to forward messages to them.
+#This Config 👇 is Optional
+ - `FROM_CHATS_1`: **Space separated** list of chat ID's to forward messages from. Do not forget to include the 
+minus (-) sign in the chat ID's of groups and channels. You can add ID's of users too, to forward their 
+messages with the bot.
+ - `TO_CHATS_1`: **Space separated** list of chat ID's to forward messages to. Do not forget to include the 
+minus (-) sign in the chat ID's of groups and channels. You can add ID's of users too, to forward messages to them.
+ - `FROM_CHATS_2`: **Space separated** list of chat ID's to forward messages from. Do not forget to include the 
+minus (-) sign in the chat ID's of groups and channels. You can add ID's of users too, to forward their 
+messages with the bot.
+ - `TO_CHATS_2`: **Space separated** list of chat ID's to forward messages to. Do not forget to include the 
+minus (-) sign in the chat ID's of groups and channels. You can add ID's of users too, to forward messages to them.
+ - `FROM_CHATS_3`: **Space separated** list of chat ID's to forward messages from. Do not forget to include the 
+minus (-) sign in the chat ID's of groups and channels. You can add ID's of users too, to forward their 
+messages with the bot.
+ - `TO_CHATS_3`: **Space separated** list of chat ID's to forward messages to. Do not forget to include the 
+minus (-) sign in the chat ID's of groups and channels. You can add ID's of users too, to forward messages to them.
+ - `FROM_CHATS_4`: **Space separated** list of chat ID's to forward messages from. Do not forget to include the 
+minus (-) sign in the chat ID's of groups and channels. You can add ID's of users too, to forward their 
+messages with the bot.
+ - `TO_CHATS_4`: **Space separated** list of chat ID's to forward messages to. Do not forget to include the 
+minus (-) sign in the chat ID's of groups and channels. You can add ID's of users too, to forward messages to them.
+ - `FROM_CHATS_5`: **Space separated** list of chat ID's to forward messages from. Do not forget to include the 
+minus (-) sign in the chat ID's of groups and channels. You can add ID's of users too, to forward their 
+messages with the bot.
+ - `TO_CHATS_5`: **Space separated** list of chat ID's to forward messages to. Do not forget to include the 
+minus (-) sign in the chat ID's of groups and channels. You can add ID's of users too, to forward messages to them.
+
  - `REMOVE_TAG`: Wether remove the "Forwarded From ...." tag or not.
 
  - `WEBHOOK`: Setting this to `ANYTHING` will enable webhooks when in env mode messages.
