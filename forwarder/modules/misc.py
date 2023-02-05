@@ -47,7 +47,7 @@ def get_id(update, context):
 
         if chat.type == "private":  # Private chat with the bot
             message.reply_text(
-                "<b>Your ID is <code>{}</code>.</b>".format(chat.id), parse_mode=ParseMode.MARKDOWN
+                "<b>Your ID is <code>{}</code>.</b>".format(chat.id), parse_mode=ParseMode.HTML
             )
 
         else:  # Group chat where the bot is a member
