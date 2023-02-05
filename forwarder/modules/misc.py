@@ -14,8 +14,8 @@ def get_id(update, context):
             sender = message.reply_to_message.forward_from
             forwarder = message.reply_to_message.from_user
             message.reply_text(
-                "**The Original sender, {}, has an ID of `{}`. \n"
-                "The Forwarder, {}, has an ID of `{}`.**".format(
+                "<b>The Original sender, {}, has an ID of `{}`. \n"
+                "The Forwarder, {}, has an ID of `{}`.</b>".format(
                     sender.first_name, sender.id, forwarder.first_name, forwarder.id
                 ),
                 parse_mode=ParseMode.MARKDOWN,
@@ -26,8 +26,8 @@ def get_id(update, context):
             channel = message.reply_to_message.forward_from_chat
             forwarder = message.reply_to_message.from_user
             message.reply_text(
-                "**The Channel, {}, has an ID of `{}`. \n"
-                "The Forwarder, {}, has an ID of `{}`.**".format(
+                "<b>The Channel, {}, has an ID of `{}`. \n"
+                "The Forwarder, {}, has an ID of `{}`.</b>".format(
                     channel.title, channel.id, forwarder.first_name, forwarder.id
                 ),
                 parse_mode=ParseMode.MARKDOWN,
@@ -38,7 +38,7 @@ def get_id(update, context):
                 message.reply_to_message.from_user
             )  # Replied message is a message from a user
             message.reply_text(
-                "**{}'s ID is `{}`.**".format(user.first_name, user.id),
+                "<b>{}'s ID is `{}`.</b>".format(user.first_name, user.id),
                 parse_mode=ParseMode.MARKDOWN,
             )
 
@@ -47,12 +47,12 @@ def get_id(update, context):
 
         if chat.type == "private":  # Private chat with the bot
             message.reply_text(
-                "**Your ID is `{}`.**".format(chat.id), parse_mode=ParseMode.MARKDOWN
+                "<b>Your ID is `{}`.</b>".format(chat.id), parse_mode=ParseMode.MARKDOWN
             )
 
         else:  # Group chat where the bot is a member
             message.reply_text(
-                "**This Group's ID is `{}`.**".format(chat.id),
+                "<b>This Group's ID is `{}`.</b>".format(chat.id),
                 parse_mode=ParseMode.MARKDOWN,
             )
 
