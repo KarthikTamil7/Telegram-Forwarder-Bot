@@ -22,8 +22,6 @@ if ENV:
 
     try:
         FROM_CHATS = set(int(x) for x in os.environ.get("FROM_CHATS", "").split())
-    except ValueError:
-        raise Exception("Your FROM_CHATS list does not contain valid integers.")
 
     try:
         TO_CHATS = set(int(x) for x in os.environ.get("TO_CHATS", "").split())
