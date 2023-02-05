@@ -22,9 +22,26 @@ class Config(object):
     FROM_CHATS = [-1001234704297]  # List of chat id's to forward messages from
     TO_CHATS = [-1001128355490]  # List of chat id's to forward messages to
 
-    # FOR AUTOMATICALLY FORWARDING MESSAGES
+    # Channel 1 FOR AUTOMATICALLY FORWARDING MESSAGES
     FROM_CHATS_1 = [-1001234704297]  # List of chat id's to forward messages from
     TO_CHATS_1 = [-1001128355490]  # List of chat id's to forward messages to
+
+    # Channel 2 FOR AUTOMATICALLY FORWARDING MESSAGES
+    FROM_CHATS_2 = [-1001234704297]  # List of chat id's to forward messages from
+    TO_CHATS_2 = [-1001128355490]  # List of chat id's to forward messages to
+
+    # Channel 3 FOR AUTOMATICALLY FORWARDING MESSAGES
+    FROM_CHATS_3 = [-1001234704297]  # List of chat id's to forward messages from
+    TO_CHATS_3 = [-1001128355490]  # List of chat id's to forward messages to
+
+    # Channel 4 FOR AUTOMATICALLY FORWARDING MESSAGES
+    FROM_CHATS_4 = [-1001234704297]  # List of chat id's to forward messages from
+    TO_CHATS_4 = [-1001128355490]  # List of chat id's to forward messages to
+
+    # Channel 5 FOR AUTOMATICALLY FORWARDING MESSAGES
+    FROM_CHATS_5 = [-1001234704297]  # List of chat id's to forward messages from
+    TO_CHATS_5 = [-1001128355490]  # List of chat id's to forward messages to
+
 
     # FOR WEBHOOKS
     WEBHOOK = False
