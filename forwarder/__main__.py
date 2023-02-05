@@ -10,7 +10,7 @@ from forwarder.modules import ALL_MODULES
 PM_START_TEXT = """
 <b>Hi 👋🏻 {},
 
-I'm {} a Bot to Maintain Your Channels. I am very useful for the Channel Admin who have many Channels.
+I'm {} to Maintain Your Channels. I am very useful for the Channel Admin who have many Channels.
 
 See /help for more Details.
 
@@ -64,6 +64,19 @@ def help(update: Update, _):
         message.reply_text("Contact me via PM to get a list of usable commands.")
     else:
         message.reply_text(PM_HELP_TEXT)
+            parse_mode=ParseMode.HTML,
+        )
+
+def help(update: Update, _):
+    chat = update.effective_chat
+    message = update.effective_message
+    if chat.type == "private":
+        message.reply_text(
+            PM_ABOUT_TEXT.format(user.first_name, dispatcher.bot.first_name),
+            parse_mode=ParseMode.HTML,
+        )
+    else:
+        message.reply_text("About Me 😌")
 
 
 def main():
@@ -73,8 +86,12 @@ def main():
     help_handler = CommandHandler(
         "help", help, filters=Filters.user(OWNER_ID), run_async=True
     )
+    about_handler = CommandHandler(
+        "about", about, filters=Filters.user(OWNER_ID), run_async=True
+    )
     dispatcher.add_handler(start_handler)
     dispatcher.add_handler(help_handler)
+    dispatcher.add_handler(about_handler)
 
     if WEBHOOK and URL:
         LOGGER.info("Using webhooks.")
