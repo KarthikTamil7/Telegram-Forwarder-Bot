@@ -137,4 +137,4 @@ You can view the logs by the command: ```docker-compose logs -f```
 
 ### Credits
 
-* [saksham2410](https://github.com/saksham2410) - AutoForwarder-TelegramBot
+* [Karthik](https://github.com/KarthikTamil7) - Auto Forwarder Telegram Bot for Added (TO_CHATS_1, FROM_CHATS_1) to (TO_CHATS_5, FROM_CHATS_5) Variables.
